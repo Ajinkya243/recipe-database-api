@@ -1,6 +1,8 @@
 const {initializeDatabase}=require("./db/db.connect");
 const {Recipe}=require("./models/recipe.models");
 const express=require('express');
+const cors = require("cors");
+app.use(cors());
 const app=express();
 require('dotenv').config();
 const port=process.env.PORT
