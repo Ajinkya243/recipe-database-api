@@ -10,7 +10,7 @@ const port=process.env.PORT
 app.use(express.json());
 
 initializeDatabase();
-app.listen(port,()=>{
+app.listen(3000,()=>{
     console.log(`Express running on ${port}`)
 })
 
