@@ -172,3 +172,7 @@ app.post("/recipes",async(req,resp)=>{
     }
 })
 
+app.get("/",(req,resp)=>{
+    resp.json("Welcome to recipe database api.")
+})
+
